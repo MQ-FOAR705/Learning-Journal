@@ -166,7 +166,33 @@ Overleaf —> Github
 \item Cloudstor: very straightforward and easy to use.
 \end{itemize}
 
+\section{20/06/2019}
+\subsection{Thoughts/Intentions}
+\textbf{7:40pm}:  I've set up another monitor on my desk to help with the multiple tabs that need to opened at once and feeling more organized. Planning to work through data carpentry.
 
+\subsection{Action}
+
+Dates as Data 
+\begin{itemize}
+\item Open 'Dates as Data' section in 'Data Organization in Spreadsheets for Social Sciences'
+\item Downloaded SAFI dated spreadsheet
+\item Had to google "how to extract components of date into new columns" because I was unsure what this meant (novice excel user here)
+\item Created new columns adjacent to interview dates and named each column "day" , "month", "year" 
+\item Wrote in Day column next to interview date 17/11/2016 =DAY(17) 
+\item \textbf{ERROR}: the cell automated to 17/01/1900
+\item Wrote in the month column =MONTH(11) - ERROR: automated to 01/01/1900
+\item Retyped under Day column =Day(B2) to refer to the date - \textbf{ERROR}: There are one or more circular references where a formula refers to its own cell either directly or indirectly. This might cause them to calculate incorrectly.
+\item Re-downloading spreadsheet and starting fresh.
+\item \textbf{ERROR} - same issue where =day(17) automates to 17/01/1900
+\item Filling it all out with the automated system, I see that the excels date systems (1990) is meant to be relevant, I'm confused to how it applies but will ask.
+\item Just noticed the solution tab on Data Carpentry and going to enter dates manually without an automated function and ask question in class.
+\item Added formula to each column underneath i.e. day column has =day(b1:b15)
+\item #VALUE! appears in the formula cell. 
+\item Leaving for now.
+\end{itemize}
+
+\subsection{Final Thoughts}
+\textbf{8:30pm} Very frustrating that what was assumed as a simple task has taken a lot of back and forth and time but hoping once I'm able to reiterate these errors with someone it will be clear and straight forward. 
 
 
 \end{document}
