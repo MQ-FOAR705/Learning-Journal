@@ -182,7 +182,7 @@ Dates as Data
 \item Created new columns adjacent to interview dates and named each column "day" , "month", "year" 
 \item Wrote in Day column next to interview date 17/11/2016 =DAY(17) 
 \item \textbf{ERROR}: the cell automated to 17/01/1900
-\item Wrote in the month column =MONTH(11) - ERROR: automated to 01/01/1900
+\item Wrote in the month column =MONTH(11) - \textbf{ERROR}: automated to 01/01/1900
 \item Retyped under Day column =Day(B2) to refer to the date - \textbf{ERROR}: There are one or more circular references where a formula refers to its own cell either directly or indirectly. This might cause them to calculate incorrectly.
 \item Re-downloading spreadsheet and starting fresh.
 \item \textbf{ERROR} - same issue where =day(17) automates to 17/01/1900
@@ -293,6 +293,85 @@ Data Carpentry
 
 \end{itemize}
 
+\section{26/08/2019}
+\subsection{Thoughts/Intentions}
+\textbf{7:25pm}: Begin Unix Shell exercises (US). 
+
+\subsection{Actions}
+\textit{US Introducing the Shell}
+\begin{itemize}
+\item Opening terminal via spotlight to complete exercises
+\item Prompt of dollar sign indicates ready for command
+\item Typing ls command in terminal
+\item Command lists the contents of the current directory (\textbf{SUCCESS})
+\item Typing incorrect command to enforce error message
+\item ks: Command not found (\textbf{SUCCESS})
+\item enter cntrl l to refresh (\textbf{SUCCESS})
+\end{itemize}
+
+
+\textit{US Navigating Files and Directories}
+\begin{itemize}
+\item Type pwd command (print working directory) to find my current working directory
+\item /users/sophiewallace appears
+\item type ls for listing command
+\item refreshing shell with cntrl l
+\item typing ls -F for comprehensive listing command
+\item directory list opens with slash characters afterwards, however no colors (\textbf{SUCCESS})
+\item type command ls -F /
+\item lists files and directories in root directory (\textbf{SUCCESS})
+\item type command ls --help
+\item \textbf{ERROR}: illegal option, must be incompatible with this laptop
+\item type command man ls
+\item \textbf{General Commands Manual} appears (\textbf{SUCCESS}) 
+\item press space bar to skip up and down page
+\item used / followed by word or character to search in manual 
+\item moved between hits using N to move forward and shift + N for moving backward
+\item quit the manual using Q
+\item typed command cntrl l to refresh
+\item entered ls -l command to view long list format (\textbf{SUCCESS})
+\item entered command cntrl l to refresh
+\item entered ls -l -h command to view human readable file size (\textbf{SUCCESS)}
+\item entered command cntrl l to refresh
+\item entered ls -R to list directories recursively (\textbf{SUCCESS})
+\item entered command cntrl l to refresh
+\item entered ls -R -t to list files in each directory sorted by time of last change (\textbf{SUCCESS)}
+\item entered command cntrl l to refresh
+\item entered command ls -F Desktop (\textbf{SUCCESS})
+\item entered command ls -F Desktop/data-shell
+\item \textbf{ERROR}: No such file or directory
+\item moved data-shell folder to desktop for exercise
+\item entered command cntrl l to refresh terminal
+\item entered command ls -F Desktop/data-shell (\textbf{SUCCESS})
+\item entered command cd Desktop to change shell's idea of directory location
+\item entered command cd data-shell (\textbf{ERROR}) no such file or directory
+\item entered command cd data (\textbf{ERROR}) no such file or directory
+\item entered command cntrl l to refresh
+\item entered command ls to list directory 
+\item shell directory has located us in desktop and listed desktop files
+
+\end{itemize}
+\subsection{Final Thoughts}
+8:35pm: The last few errors trying to command my shell directory into the desktop and then data-shell folder is due to my desktop having a folder named Desktop. Therefore there has been an issue in locating myself. I will attempt to fix this using the US exercises this week as I think the next task includes moving up the directory rather than through. These command exercises using terminal are mostly straight-forward however they are quite time-consuming due to having to write in the learning journal. I have compiled a glossary of commands underneath to assist with shortcuts.
+
+\subsection{Glossary}
+\textbf{Home Directory Commands}
+
+\begin{itemize}
+\item slash character /: the root directory if in front of a file. When inside a name it is just a separator.
+\item bin: stored built-in programs
+\item data: miscellaneous data flies
+\item users: where users' personal directories are located
+\item tmp: temporary files that don't need to be stored long-term.
+\item ls: listing 
+\item -F: similar to listing but more comprehensive. Known as switch or a flag.
+\item ls -F /: includes a command (ls), an option (-F) and an argument (/)
+\item man ls: man command, general commands manual
+\item ls -R: list directories recursively
+\item ls -t: lists things by time of last change 
+\item ls -F Desktop/: finding contents on desktop
+\item cd: to change shell's idea of directory location
+\end{itemize}
 
 
 
