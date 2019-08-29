@@ -352,7 +352,7 @@ Data Carpentry
 
 \end{itemize}
 \subsection{Final Thoughts}
-8:35pm: The last few errors trying to command my shell directory into the desktop and then data-shell folder is due to my desktop having a folder named Desktop. Therefore there has been an issue in locating myself. I will attempt to fix this using the US exercises this week as I think the next task includes moving up the directory rather than through. These command exercises using terminal are mostly straight-forward however they are quite time-consuming due to having to write in the learning journal. I have compiled a glossary of commands underneath to assist with shortcuts.
+\textbf{8:35pm}: The last few errors trying to command my shell directory into the desktop and then data-shell folder is due to my desktop having a folder named Desktop. Therefore there has been an issue in locating myself. I will attempt to fix this using the US exercises this week as I think the next task includes moving up the directory rather than through. These command exercises using terminal are mostly straight-forward however they are quite time-consuming due to having to write in the learning journal. I have compiled a glossary of commands underneath to assist with shortcuts.
 
 \subsection{Glossary}
 \textbf{Home Directory Commands}
@@ -372,6 +372,82 @@ Data Carpentry
 \item ls -F Desktop/: finding contents on desktop
 \item cd: to change shell's idea of directory location
 \end{itemize}
+
+\section{29/08/2019}
+\subsection{Thoughts/Intentions}
+1:30pm Continuing Unix Shell (US)
+
+\subsection{Action}
+\textit{US Navigating Files and Directories continues}
+\begin{itemize}
+\item Opening terminal
+\item Attempting to return to data directory using cd Desktop/data-shell/data
+\item Using command pwd ls -F to locate position (\textbf{SUCCESS)}
+\item Currently in /Users/sophiewallace/Desktop/data-shell/data
+\item Command cd .. to move backwards through directory
+\item Comman pwd ls -F to locate position 
+\item Currently in /Users/sophiewallace/Desktop/data-shell (\textbf{SUCCESS})
+\item Activity: Absolute vs Relative Paths
+\item Moving backward through absolute vs relative paths - cd or cd ..
+\end{itemize}
+\textit{US Working with Files and Directories}
+\begin{itemize}
+\item Command pwd: located position in data-shell
+\item Command ls -F: identified what data-shell directory contains
+\item Command mkdir thesis: make directory + thesis
+\item Command ls -F: can see a created directory named thesis inside data-shell (SUCCESS)
+\end{itemize}
+\textit{Creating a text file in directory}
+\begin{itemize}
+\item Command cd thesis: change working directory to thesis
+\item Command nano draft.txt: create a text file 
+\item Opens blank draft text file 
+\item Typing text in draft 
+\item Command cntrl + O: save and name file
+\item Enter return: accept and save file
+\item Entered thesis folder on desktop, text is saved but could not access
+\item Command Ctrl-X: quits editor and returns to termina
+\end{itemize}
+\textit{Creating Files a Different Way}
+\begin{itemize}
+\item Command touch my(underscore)file.txt
+\item Command ls: to list file
+\item Command ls -l: inspects file 
+\item touch my(underscore)file.txt generates and saves blank text file
+\item Command cd to refresh location
+\end{itemize}
+\textit{Moving Files and Directories}
+\begin{itemize}
+\item Command cd ~/Desktop/data-shell/
+\item Command mv thesis/draft.txt thesis/quotes.txt: moving thesis draft to thesis quotes 
+\item \textbf{ERROR}: no such file or directory exists
+\item Command ls: no quotes.txt exists
+\end{itemize}
+
+\subsection{Key Points}
+\begin{itemize}
+\item US Navigating Files and Directories
+\item The file system is responsible for managing information on the disk.
+\item Information is stored in files, which are stored in directories (folders).
+\item Directories can also store other directories, which forms a directory tree.
+\item cd path changes the current working directory.
+\item ls path prints a listing of a specific file or directory; ls on its own lists the current working directory.
+\item pwd prints the user’s current working directory.
+\item / on its own is the root directory of the whole file system.
+\item A relative path specifies a location starting from the current location.
+\item An absolute path specifies a location from the root of the file system.
+\item Directory names in a path are separated with / on Unix, but \ on Windows.
+\item .. means ‘the directory above the current one’; . on its own means ‘the current directory’.
+\end{itemize}
+
+
+\subsection{Final Thoughts}
+\textbf{3:45PM} I need to finish to move onto another assignment. Although it is interesting utilizing the commands, the wide-range of commands we are learning is a little overwhelming. I'm unsure if I'll remember many of these commands and I'm barely halfway through the 3rd section. It is an interesting exercise though and enjoyable when you successfully see something moved or manipulated. I've began adding subtitles in between commands so when I look back I know what I am trying to achieve in the mini exercises.
+
+
+
+
+
 
 
 
