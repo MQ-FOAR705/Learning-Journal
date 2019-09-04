@@ -444,6 +444,94 @@ Data Carpentry
 \subsection{Final Thoughts}
 \textbf{3:45PM} I need to finish to move onto another assignment. Although it is interesting utilizing the commands, the wide-range of commands we are learning is a little overwhelming. I'm unsure if I'll remember many of these commands and I'm barely halfway through the 3rd section. It is an interesting exercise though and enjoyable when you successfully see something moved or manipulated. I've began adding subtitles in between commands so when I look back I know what I am trying to achieve in the mini exercises.
 
+\section{04/09/2019}
+\subsection{Thoughts/Intentions}
+\begin{itemize}
+\item 10AM: Feeling a little more at ease seeing iLearn marks for the learning journal. Although a lot of this work is confusing/frustrating/tedious, at least the amount of effort put in is accounted for. Now attempting to get through the rest of the Unix Shell Exercises.
+\item 10:15AM: Unable to complete next excersises due to the quote text file not being created, I reiterated the same instructions and they have given an ERROR again. Going to create my own text file named quotes in thesis to see if that can assist me with the rest of the exercises.
+\item 10:53AM: Attempt to upload screenshot onto LaTeX following overleaf instructions "including images on Overleaf"
+\item 11:30AM: Continuing Unix Shell
+\end{itemize}
+
+
+\subsection{Action}
+Moving to the Current Folder
+\begin{itemize}
+\item Remembering command " .. " reefers to the parent directory (i.e. one above the current directory)
+\item Remember command " . " refers to the current directory
+\end{itemize}
+Creating text file quote
+\begin{itemize}
+\item Command cd thesis: getting to working directory
+\item Command nano quote.txt: Text file created 
+\item Command cntrl O: naming disk
+\item Command return: to accept default name
+\item Command cntrl-X: back to terminal \textbf{ERROR}
+\item Need to use command SHIFT cntrl X 
+\item  SUCCESS quote txt is created in thesis document - now I can try continue exercises
+\end{itemize}
+Copying files and directories
+\begin{itemize}
+\item Command: cp quotes.txt . thesis/quotations.txt \textbf{ERROR}: no such file or directory - \textit{perhaps need to get inside the data-shell folder first?}
+\item Command cd ~/Desktop/data-shell/
+\item Command: cp quotes.txt . thesis/quotations.txt \textbf{ERROR}: no such file or directory - \textit{maybe try enter into thesis folder first?}
+\item Command cd ~/Desktop/data-shell/thesis
+\item Command cp quotes.txt . thesis/quotations.txt: displays usage and a bunch of text - unsure what it means or whether it is correct (uploading screenshot below)
+\end{itemize}
+Upload Image
+\begin{itemize}
+\item Click on upper left upload icon in editor
+\item Drag photo into dialogue box
+\item Attempting command: includegraphics, width=4cm,  name of uploaded image \textbf{ERROR}: Only text of command comes up i.e. width=4cmimage1.png
+\item Now attempting command usepackage \textbf{ERROR} - picture is not appearing only text.
+\item After many failed attempts I till cannot include image, unsure what is going wrong and moving onto unix shell
+\end{itemize}
+Removing files and directories
+\begin{itemize}
+\item Command cd .. : returned to data-shell directory \textbf{SUCCESS}
+\item Command rm quotes.txt : removing file 
+\item Command ls quotes.txt : no such file or directory (\textbf{SUCCESS}) file have been successfully removed and cannot be located
+\item Command rm thesis : attempt to remove thesis directory
+\item \textbf{SUCCESS} "rm: cannot remove thesis: is a directory" - rm by default only works on files, not directories.
+\item Command rm -r thesis : removed thesis directory and did so without any confirmation prompts 
+\item Command ls: thesis is gone from data-shell (\textbf{SUCCESS}) however unsure if I was meant to actually delete.. 
+\end{itemize}
+
+\subsection{Key Points}
+\begin{itemize}
+\item cp old new copies a file.
+\item mkdir path creates a new directory.
+\item mv old new moves (renames) a file or directory.
+\item rm path removes (deletes) a file.
+\item * matches zero or more characters in a filename, so *.txt matches all files ending in .txt.
+\item ? matches any single character in a filename, so ?.txt matches a.txt but not any.txt.
+\item Use of the Control key may be described in many ways, including Ctrl-X, Control-X, and shift Cntrl X.
+\item The shell does not have a trash bin: once something is deleted, it’s really gone.
+\item Most files’ names are something.extension. The extension isn’t required, and doesn’t guarantee anything, but is normally used to indicate the type of data in the file.
+\item Depending on the type of work you do, you may need a more powerful text editor than Nano.
+\end{itemize}
+
+\subsection{Final Thoughts}
+\textbf{11:57AM} I definitely have struggled with this Unix shell section compared to the others. I was not able to create a quote file using " mv " however I was able to create my own successfully using " nano ". I was happy that I remembered to use cd .. on my own to go back through the directory - that was a satisfying light bulb moment albeit it's minor significance. I was unable to insert a photo though which was a shame. It uploaded successfully and is in the left editor column, I also used all the instructions on overleaf to insert it so I'm unsure what happened. I would really like to learn how to use LaTeX properly as I can see how useful it would be for writing my thesis next year. If we could have one lecture just on navigating LaTeX commands it would be really useful and appreciated. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
