@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 \title{Learning Journal}
 \author{Sophie Wallace }
@@ -455,12 +456,12 @@ Data Carpentry
 
 
 \subsection{Action}
-Moving to the Current Folder
+\textit{Moving to the Current Folder}
 \begin{itemize}
 \item Remembering command " .. " reefers to the parent directory (i.e. one above the current directory)
 \item Remember command " . " refers to the current directory
 \end{itemize}
-Creating text file quote
+\textit{Creating text file quote}
 \begin{itemize}
 \item Command cd thesis: getting to working directory
 \item Command nano quote.txt: Text file created 
@@ -470,7 +471,7 @@ Creating text file quote
 \item Need to use command SHIFT cntrl X 
 \item  SUCCESS quote txt is created in thesis document - now I can try continue exercises
 \end{itemize}
-Copying files and directories
+\textit{Copying files and directories}
 \begin{itemize}
 \item Command: cp quotes.txt . thesis/quotations.txt \textbf{ERROR}: no such file or directory - \textit{perhaps need to get inside the data-shell folder first?}
 \item Command cd ~/Desktop/data-shell/
@@ -478,7 +479,7 @@ Copying files and directories
 \item Command cd ~/Desktop/data-shell/thesis
 \item Command cp quotes.txt . thesis/quotations.txt: displays usage and a bunch of text - unsure what it means or whether it is correct (uploading screenshot below)
 \end{itemize}
-Upload Image
+\textit{Upload and insert Image on LaTeX}
 \begin{itemize}
 \item Click on upper left upload icon in editor
 \item Drag photo into dialogue box
@@ -486,7 +487,7 @@ Upload Image
 \item Now attempting command usepackage \textbf{ERROR} - picture is not appearing only text.
 \item After many failed attempts I till cannot include image, unsure what is going wrong and moving onto unix shell
 \end{itemize}
-Removing files and directories
+\textit{Removing files and directories}
 \begin{itemize}
 \item Command cd .. : returned to data-shell directory \textbf{SUCCESS}
 \item Command rm quotes.txt : removing file 
@@ -514,6 +515,24 @@ Removing files and directories
 \subsection{Final Thoughts}
 \textbf{11:57AM} I definitely have struggled with this Unix shell section compared to the others. I was not able to create a quote file using " mv " however I was able to create my own successfully using " nano ". I was happy that I remembered to use cd .. on my own to go back through the directory - that was a satisfying light bulb moment albeit it's minor significance. I was unable to insert a photo though which was a shame. It uploaded successfully and is in the left editor column, I also used all the instructions on overleaf to insert it so I'm unsure what happened. I would really like to learn how to use LaTeX properly as I can see how useful it would be for writing my thesis next year. If we could have one lecture just on navigating LaTeX commands it would be really useful and appreciated. 
 
+
+
+
+\section{04/09/2019}
+\subsection{Thoughts/Intention}
+\textbf{6:09PM} Consulted with a friend to insert images and wanting to document steps in learning journal
+
+\subsection{Actions}
+\begin{itemize}
+\item Include LaTeX command "usepackage" at beginning of document 
+\item Type LaTeX command "backwardslash includegraphics" "width= backwardslash textwidth" "image1.png" (Unable to write command without utilising command but \textbf{SUCCESS}
+\end{itemize}
+
+
+\includegraphics[width=\textwidth]{image1.png}
+
+\subsection{Final Thoughts}
+\textbf{6:20PM} Happy I was able to successfully insert the image into the document thanks to a friend. It would be really helpful to work in groups in class to understand errors and reiterate issues. The above image was the result from a previous exercise in Unix shell under "copying files and directories" in journal entry 04/09/2019. 
 
 
 
