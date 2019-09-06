@@ -753,13 +753,111 @@ Answer the following questions regarding these tools:
 \subsubsection{DEVONthink 3}
 \textbf{5:44PM} DEVONthink 3 has a lot of great features that meet the specified criteria. Many pains are addressed and its function has numerous gain creators. The fact that it is compatible with all data types, syncs to an online storage, allows editing of text and provides rich metadata is fantastic. It also has gains that were not specified such as in-built add-ons. These extensions are installed onto a browser so you can easily store additional data from the internet such as websites and references. The interface for this tool is not that appealing and needs further work, I would prefer something that has less clutter and features on the initial home page, however you are able to customize the layout so further interaction with the technology may solve this. Also, to gain access to the full features of this tool the user must pay an additional fee. Similarly if you want to download the mobile application, it costs. 
 
+\section{06/09/2019}
+\subsection{Elaboration Tests}
+Continuing on with elaboration tests for excel + cloudstor sync client (CSC).
+\subsection{Intention}
+Answer the following questions regarding this tool:
+\begin{itemize}
+\item Is this tool compatible with all data types?
+\item Does this tool organise files with rich metadata
+\item Does this tool allow for editing of data?
+\item Can this tool operate offline?
+\item Does this tool have a reliable storage system?
+\end{itemize}
+
+\subsubsection{Excel + CSC}
+\begin{itemize}
+\item \textbf{10:09AM} Test if this tool is compatible with all data types?
+\item \textbf{10:24AM} Test is this tool can organise . files with rich metadata
+\item \textbf{10:29AM} Test if this tool allows for editing data
+\item \textbf{10:35AM} Test if this tool can operate offline
+\item \textbf{10:40AM} Test if this tool can sync onto storage system
+\end{itemize}
 
 
 
+\section{Action}
+\subsubsection{Excel + CSC}
+Uploading Data Types
+\begin{itemize}
+\item Open Excel
+\item Click create new work book
+\item Drag image into excel
+\item \textbf{SUCCESS} Image can be uploaded into application
+\item Drag audio file into excel
+\item \textbf{SUCCESS} audio file can be uploaded into application
+\item Drag word document into excel
+\item \textbf{ERROR} Word document is unable to be uploaded
+\item Drag video file into excel
+\item \textbf{SUCCESS} video file can be uploaded into application
+\end{itemize}
+Management and Metadata
+\begin{itemize}
+\item Click on image file and move into excel box
+\item \textbf{ERROR} Image does not automatically go into box
+\item Write categories of data in excel
+\item \textbf{SUCCESS} Categories for type file can be entered
+\item Write descriptions of data in excel
+\item \textbf{SUCCESS} Descriptions able to be included
+\end{itemize}
+Editing Data
+\begin{itemize}
+\item Double click on image
+\item \textbf{SUCCESS} Editing tab appears
+\item Double click on video file
+\item \textbf{ERROR} Video file plays and no editing tab appears
+\item \textbf{ERROR} Excel crashes expectantly
+\item \textbf{ERROR} Pop up appears "Microsoft Excel has crashed expectantly. Sorry for the inconvenience. We are trying to recover your work now."
+\item \textbf{ERROR} Video has disappeared
+\item Double click on Audio file
+\item Sound from file plays
+\item Click escape for sound to stop playing
+\item \textbf{ERROR} No editing tab appears
+\end{itemize}
+Offline Operation
+\begin{itemize}
+\item Turn wifi off 
+\item Drag image file into Excel 
+\item Write metadata in cell
+\item \textbf{SUCCESS} Image is uploaded and metadata is written
+\end{itemize}
+Saving and Storage 
+\begin{itemize}
+\item Visit cloudstor sync client website
+\item Click download desktop sync client 
+\item Open cloustor client installer
+\item Click continue in CSC installer
+\item "This will take 97.6 MB of space on your computer"
+\item Click install
+\item \textbf{SUCCESS} Installation was successful
+\item Double click on cloudstor application
+\item Enter user credentials 
+\item \textbf{ERROR} "Access forbidden by server. To verify that you have proper access, click here"
+\item Click on hyper link 
+\item \textbf{ERROR} Entered cloudstor with studentID and changed password, no luck with CSC
+\item Click on hyperlin on CSC window to "request an app password from the web interface.
+\item Type in app name to create new app password
+\item Type in CloudStor Client
+\item Recieved password/token
+\item Copy password into app
+\item \textbf{ERROR} Access forbidden by server. To verify that you have proper access, click here to access the service with your browser.
+\item Trying that hyper link one more time
+\item Sends me to my cloudstor homepage with no additional prompts
+\item Attempt to just press next again with credentials entered
+\item \textbf{SUCCESS} connects me into setting up local folder options (out of nowhere)
+\item Option to synchronise all (Recommended)
+\item Click sync all
+\item Paused sync process as I want to only see if it works for Excel
+\item Click save as for workbook
+\item Select save in cloudstor folder
+\item Open cloudstor browser
+\item \textbf{ERROR} File does not appear in cloudstor browser
+\end{itemize}
 
 
-
-
+\subsection{Final Thoughts}
+\textbf{11AM} Utilizing excel with the CSC proved to be more challenging than anticipated. Although most data types can be included, they are not managed or organized automatically. Whilst metadata could be rich in detail if manually entered, the technical debt acquired from this process would be extensive. The test for CSC was inconclusive as the file saving process was unclear. This may have been due to pausing synchronisation due to not wanting 13GB loaded onto my small memory disk. Excel would work better for manually entering only metadata rather than managing different data files.
 
 
 
