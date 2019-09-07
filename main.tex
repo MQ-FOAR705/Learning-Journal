@@ -679,6 +679,8 @@ Answer the following questions regarding these tools:
 \item Exited Tropy and do not encounter any save option pop ups
 \item Searching Tropy interface
 \item \textbf{ERROR} No sync or save options
+\item Search Tropy website in browser
+\item \textbf{SUCCESS} Option to sync Tropy with GitHub
 \end{itemize}
 
 
@@ -748,7 +750,7 @@ Answer the following questions regarding these tools:
 
 \subsubsection{Tropy}
 \textbf{3:31PM} Uploading Data Types: Photos are uploaded with ease in a swift dragging motion, however all other data types are incompatible. \\
-\textbf{4:02PM} Tropy has a lot of pain relievers and gain creators when it comes to my POC. It operates offline, organises and writes rich metadata, has inbuilt editing functions for photos, and has an easy to use interface that is also aesthetically pleasing. However, Tropy is specifically for photo management and does not cater to all kinds of data types. It also does not have an inbuilt sync function so I would need to combine an external cloudstor sync client with it.  
+\textbf{4:02PM} Tropy has a lot of pain relievers and gain creators when it comes to my POC. It operates offline, organises and writes rich metadata, has inbuilt editing functions for photos, and has an easy to use interface that is also aesthetically pleasing. However, Tropy is specifically for photo management and does not cater to all kinds of data types. 
 
 \subsubsection{DEVONthink 3}
 \textbf{5:44PM} DEVONthink 3 has a lot of great features that meet the specified criteria. Many pains are addressed and its function has numerous gain creators. The fact that it is compatible with all data types, syncs to an online storage, allows editing of text and provides rich metadata is fantastic. It also has gains that were not specified such as in-built add-ons. These extensions are installed onto a browser so you can easily store additional data from the internet such as websites and references. The interface for this tool is not that appealing and needs further work, I would prefer something that has less clutter and features on the initial home page, however you are able to customize the layout so further interaction with the technology may solve this. Also, to gain access to the full features of this tool the user must pay an additional fee. Similarly if you want to download the mobile application, it costs. 
@@ -857,15 +859,149 @@ Saving and Storage
 
 
 \subsection{Final Thoughts}
-\textbf{11AM} Utilizing excel with the CSC proved to be more challenging than anticipated. Although most data types can be included, they are not managed or organized automatically. Whilst metadata could be rich in detail if manually entered, the technical debt acquired from this process would be extensive. The test for CSC was inconclusive as the file saving process was unclear. This may have been due to pausing synchronisation due to not wanting 13GB loaded onto my small memory disk. Excel would work better for manually entering only metadata rather than managing different data files.
+\textbf{11:05AM} Utilizing excel with the CSC proved to be more challenging than anticipated. Although most data types can be included, they are not managed or organized automatically. Whilst metadata could be rich in detail if manually entered, the technical debt acquired from this process would be extensive. The test for CSC was inconclusive as the file saving process was unclear. This may have been due to pausing synchronisation due to not wanting 13GB loaded onto my small memory disk. Excel would work better for manually entering only metadata rather than managing different data files.
 
+\section{07/09/2019}
+\subsection{Thoughts/Intentions}
+\textbf{12:08PM} Attempting remaining Unix shell exercises
 
+\subsection{Action}
+Pipes and Filters
+\begin{itemize}
+\item Command: ls molecules
+\item \textbf{ERROR} No such file or directory
+\item Command pwd: find current working directory
+\item Location /Users/sophiewallace
+\item Command ls: listing contents in directory
+\item Command cd /Users/sophiewallace/Desktop/data-shell
+\item \textbf{SUCCESS} located myself into data-shell directory
+\item Command ls molecules: Listing contents
+\item Command cd molecules
+\item Command wc *.pbd: \textbf{SUCCESS}listed word count 
+\item Command wc -l 
+\item \textbf{ERROR} lost dollar command sign
+\item Command cntrl + c:  \textbf{SUCCESS} regained command sign
+\item Command cat lengths.txt
+\item Command wc -l *.pbd > lengths.txt 
+\item \textbf{ERROR} No such file or directory
+\item Command echo hello > testfile.01.txt
+\item \textbf{ERROOR} No response
+\item Command data-shell/data/animals.txt
+\item \textbf{ERROR} No such file or directory exists
+\item Command sort -n lengths.txt | head -n 1
+\item \textbf{ERROR} No Response from commands
+\item Command wc -l *.pdb | sort -n | head -n 1
+\item \textbf{SUCCESS} pipe led me to methane.pdb
+\end{itemize}
+Loops
+\begin{itemize}
+\item Command l: refreshing lines in terminal
+\item \textbf{SUCCESS} refreshed terminal
+\item Command cd /Users/sophiewallace/Desktop/data-shell/creatures
+\item \textbf{SUCCESS} Located in creatures directory
+\item Command head -n 5 basilisk.dat minotaur.dat unicorn.dat
+\item \textbf{SUCCESS} Displaying structures of files
+\item Command for filenes in *.dat
+\item Command > do
+\item Command >  echo (dollarsign)filename
+\item Command >  head -n 100 (dollarsign)filename | tail -n 20
+\item Command > done
+\item Command cntrl + c
+\item \textbf{SUCCESS} regained dollar sign command
+\item Command (dollarsign) for filename in *.dat
+\item Command > do
+\item Command >     cp (dollarsign)filename original-(dollarsign)filename
+\item Command > done
+\item \textbf{SUCCESS} 
+\end{itemize}
+Shell Scripts
+\begin{itemize}
+\item Command cd /Users/sophiewallace/Desktop/data-shell/molecules
+\item \textbf{SUCCESS} In molecule file
+\item Command nano middle.sh
+\item \textbf{SUCCESS} text editor opened
+\item Written in text editor "head -n 15 octane.pdb | tail -n 5"
+\item Command cntrl-0 \textbf{SUCCESS} file saved
+\item Command cntrl-c \textbf{SUCCESS} exited nano
+\item Look in molecules folder 
+\item \textbf{SUCCESS} file is created
+\item Command bash middle.sh
+\item \textbf{SUCCESS} Script displays output for pipeline
+\item Command nano middle.sh
+\item Replacing octane.pdb to dollarsign 1
+\item \textbf{ERROR} frozen terminal functions and "1" is infront of head
+\item Command cntrl x to exit and N for no saving
+\item Command nano middle.sh
+\item Move through text with arrows
+\item Replace octane.pdb to dollarsign 1
+\item Save and exit command
+\item Command bash middle.sh octane.pdb
+\item \textbf{SUCCESS} Script displays output for pipeline
+\item Command nano middle.sh
+\item Replace text with head -n "(dollarsign)2" "(dollarsign)1" | tail -n "(dollarsign)3"
+\item Save and exit
+\item Command bash middle.sh pentane.pdb 15 5
+\item Command bash middle.sh pentane.pdb 20 5
+\item \textbf{SUCCESS} Changed scripts behaviour
+\item Command nano middle.sh
+\item Add comments above script
+\item # Select lines from the middle of a file.
+\item # Usage: bash middle.sh filename end(underscore)line num(underscore)lines
+\item Save and exit nano
+\item Command nano sorted.sh
+\item Insert command lines from Unix
+\item Save and exit
+\item Command bash sorted.sh *.pdb ../creatures/*.dat
+\item \textbf{SUCCESS} Sorted list of other kinds of files
+\end{itemize}
+Finding Things 
+\begin{itemize}
+\item Command cd Desktop/data-shell/writing
+\item Command cat haiku.txt
+\item \textbf{SUCCESS} Located haiku subdirectory
+\item Command  grep not haiku.txt
+\item \textbf{SUCCESS} Located lines that contain the word not
+\item Command grep The haiku.txt
+\item \textbf{SUCCESS} Located lines containing the word the
+\item Command grep -w The haiku.txt
+\item \textbf{SUCCESS} limits matches to word boundaries
+\item Command grep -w "is not" haiku.txt
+\item \textbf{SUCCESS} Phrase containing is not found
+\item Command grep -n "it" haiku.txt
+\item \textbf{SUCCESS} Useful to use quotes when searching for multiple words
+\item Command grep -n -w "the" haiku.txt
+\item \textbf{SUCCESS} Combined options (i.e. flags) as we do with other Unix commands
+\item Command grep -n -w -i "the" haiku.txt
+\item \textbf{SUCCESS} Search is now case-insensitive
+\item Command grep -n -w -v "the" haiku.txt
+\item \textbf{SUCCESS} Search is now inverted
+\item Command grep --help
+\item \textbf{SUCCESS} and \textbf{ERROR} Options appear but they are not presented as Unix Shell, more haphazard and hard to read. \\
+\includegraphics[width=\textwidth]{grep --help.png} \\
+\item Command find . -type d
+\item \textbf{SUCCESS} Name of 5 directories appear
+\item Command find . -type f
+\item \textbf{SUCCESS} Name of files appear 
+\item Command find . -name *.txt
+\item \textbf{SUCCESS} Name matched
+\item Command  find . -name '*.txt'
+\item \textbf{SUCCESS} Expanded file name appears
+\item Command wc -l dollarsign(find . -name '*.txt')
+\item \textbf{SUCCESS} Find command utilised inside brackets
+\end{itemize}
 
+\subsection{Key Points}
+Pipes and Fliter Key Points \\
+\includegraphics[width=\textwidth]{PipesFilters_KP.png}\\
+Loops \\
+\includegraphics[width=\textwidth]{Loop_KP.png}\\
+Writing Shell Scripts \\
+\includegraphics[width=\textwidth]{WritingShellScripts_KP.png} \\
+Finding Things \\
+\includegraphics[width=\textwidth]{FindingThings_KP.png} \\
 
-
-
-
-
+\subsection{Final Thoughts}
+\textbf{1:45PM} I found these shell exercises interesting, especially writing shell scripts and finding things. The loop section was difficult and used many commands that were not in a familiar order so I would need more practice in looping. Adding screen shot of the key points helps to display the commands without encountering an error in overleaf. I like how much I've learnt with overleaf in the past week, however terminal is still rather illusive to me. 
 
 
 
