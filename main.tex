@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
 
 \title{Learning Journal}
 \author{Sophie Wallace }
@@ -299,7 +301,7 @@ Data Carpentry
 \end{itemize}
 
 \section{26/08/2019}
-\subsection{Thoughts/Intentions}
+\subsection*{Thoughts/Intentions}
 \textbf{7:25pm}: Begin Unix Shell exercises (US). 
 
 \subsection{Actions}
@@ -361,7 +363,6 @@ Data Carpentry
 
 \subsection{Glossary}
 \textbf{Home Directory Commands}
-
 \begin{itemize}
 \item slash character /: the root directory if in front of a file. When inside a name it is just a separator.
 \item bin: stored built-in programs
@@ -531,7 +532,7 @@ Data Carpentry
 \end{itemize}
 
 
-\includegraphics[width=\textwidth]{image1.png}
+\includegraphics[width=\textwidth]{Images/image1.png}
 
 \subsection{Final Thoughts}
 \textbf{6:20PM} Happy I was able to successfully insert the image into the document thanks to a friend. It would be really helpful to work in groups in class to understand errors and reiterate issues. The above image was the result from a previous exercise in Unix shell under "copying files and directories" in journal entry \textit{04/09/2019}. 
@@ -605,7 +606,7 @@ Answer the following questions regarding these tools:
 \item \textbf{ERROR}: The installation failed. "The Installer encountered an error that caused the installation to fail. Contact manufacturer for assistance"
 \end{itemize}
 
-\includegraphics[width=\textwidth]{OSSfail.png}
+\includegraphics[width=\textwidth]{Images/OSSfail.png}
 
 \textit{Open and Upload OPSS}
 \begin{itemize}
@@ -622,7 +623,7 @@ Answer the following questions regarding these tools:
 \item Download is estimated 2 hours
 \end{itemize}
 
-\subsection{Tropy}
+\subsubsection{Tropy}
 \textit{Download Tropy}
 \begin{itemize}
 \item Click "Download Tropy for macOS"on Tropy homepage
@@ -634,7 +635,7 @@ Answer the following questions regarding these tools:
 \item \textbf{SUCCESS} Application downloaded and opened onto desktop. Interface displayed below.
 \end{itemize}
 
-\includegraphics[width=\textwidth]{TropyInterface.png}\\
+\includegraphics[width=\textwidth]{Images/TropyInterface.png}\\
 
 \textit{Uploading Data Types}
 \begin{itemize}
@@ -693,7 +694,7 @@ Answer the following questions regarding these tools:
 \item \textbf{SUCCESS} Application is now opened and running on my desktop (Screenshot below displays home screen interface)
 \end{itemize}
 
-\includegraphics[width=\textwidth]{DEVONinterface.png}
+\includegraphics[width=\textwidth]{Images/DEVONinterface.png}
 
 \textit{Uploading Data Types}
 \begin{itemize}
@@ -779,7 +780,7 @@ Answer the following questions regarding this tool:
 
 
 
-\section{Action}
+\subsection{Action}
 \subsubsection{Excel + CSC}
 Uploading Data Types
 \begin{itemize}
@@ -945,7 +946,7 @@ Shell Scripts
 \item \textbf{SUCCESS} Changed scripts behaviour
 \item Command nano middle.sh
 \item Add comments above script
-\item # Select lines from the middle of a file.
+\item Select lines from the middle of a file.
 \item # Usage: bash middle.sh filename end(underscore)line num(underscore)lines
 \item Save and exit nano
 \item Command nano sorted.sh
@@ -977,7 +978,7 @@ Finding Things
 \item \textbf{SUCCESS} Search is now inverted
 \item Command grep --help
 \item \textbf{SUCCESS} and \textbf{ERROR} Options appear but they are not presented as Unix Shell, more haphazard and hard to read. \\
-\includegraphics[width=\textwidth]{grep --help.png} \\
+\includegraphics[width=\textwidth]{Images/grep --help.png} \\
 \item Command find . -type d
 \item \textbf{SUCCESS} Name of 5 directories appear
 \item Command find . -type f
@@ -992,19 +993,63 @@ Finding Things
 
 \subsection{Key Points}
 Pipes and Fliter Key Points \\
-\includegraphics[width=\textwidth]{PipesFilters_KP.png}\\
+\includegraphics[width=\textwidth]{Images/PipesFilters_KP.png}\\
 Loops \\
-\includegraphics[width=\textwidth]{Loop_KP.png}\\
+\includegraphics[width=\textwidth]{Images/Loop_KP.png} \\
 Writing Shell Scripts \\
-\includegraphics[width=\textwidth]{WritingShellScripts_KP.png} \\
+\includegraphics[width=\textwidth]{Images/WritingShellScripts_KP.png} \\
 Finding Things \\
-\includegraphics[width=\textwidth]{FindingThings_KP.png} \\
+\includegraphics[width=\textwidth]{Images/FindingThings_KP.png} \\
 
 \subsection{Final Thoughts}
 \textbf{1:45PM} I found these shell exercises interesting, especially writing shell scripts and finding things. The loop section was difficult and used many commands that were not in a familiar order so I would need more practice in looping. Adding screen shot of the key points helps to display the commands without encountering an error in overleaf. I like how much I've learnt with overleaf in the past week, however terminal is still rather illusive to me. 
 
+\section{09/09/2019}
+\subsection{Thoughts/Intentions}
+Interested in adding more formatting in overleaf to professionalize documents. \\
+\textbf{7:28PM} Adding hyperlinks to the table of contents \\
+\textbf{7:33PM} Adding figures/captions to photos\\
+\textbf{7:50PM} Add secondary figure to see result\\
 
+\subsection{Action}
+Hyperlink
+\begin{itemize}
+\item Added usepackage hyperref in the preamble
+\item Recompiled document
+\item \textbf{SUCCESS} Hyperlinks in table of contents created.
+\end{itemize}
+Photo Captions
+\begin{itemize}
+\item Utilizing commands in photo inserted below
+\end{itemize}
+\includegraphics[width=\textwidth]{Images/CaptionTest.png}\\
+\begin{itemize}
+\item \textbf{SUCCESS} Photo was included however formatting is off 
+\item Add text width in include graphics command
+\item \textbf{SUCCESS} Photo is displayed below in Figure 1: Caption Test.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/CaptionTest.png}
+    \caption{Caption Test}
+    \label{fig:my_label}
+\end{figure} 
 
+Second Figure 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/CaptionTest2.png}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+\begin{itemize}
+\item Enter figure command with image
+\item \textbf{SUCCESS} Figure enters as Figure 2. Yet formatting is off and images appear irrelevant of text/line order
+\item Add float package and H parameter to figure 
+\item \textbf{SUCCESS} Figures are now aligned as written in LaTeX code
+\end{itemize}
 
+\subsection{Final Thoughts}
+\textbf{8:05PM} I really enjoy using LaTeX and have found it interesting to play around with. I like that I have been able to add captions to the images, which was bugging me when formatting during Elaboration. Also glad hyperlinks in the table of contents are now added for easier reference.
 
 \end{document}
