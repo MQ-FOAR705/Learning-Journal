@@ -1055,8 +1055,7 @@ Second Figure
 \section{16/09/2019}
 \subsection{Thoughts/Intentions}
 \textbf{2:17PM}: Beginning open refine data carpentry exercises. \\
-
-
+\textbf{4:04PM}: Beginning Filtering and Sorting with OpenRefine
 
 \subsection{Action}
 Working with OpenRefine
@@ -1207,16 +1206,70 @@ Trim Leading and Trailing Whitespace
 \item Click Trim leading and trailing whitespace
 \item \textbf{SUCCESS} Four choices appear in text facet
 \end{itemize}
+Filtering and Sorting 
+\begin{itemize}
+\item Click down arrow for respondent roof type column
+\item Click text filter
+\item Type mabat and press return
+\item \textbf{SUCCESS} 58 matching rows out of 131 are identified
+\item Click show 50 rows
+\item \textbf{SUCCESS} 50 rows are displayed
+\item Click down arrow
+\item Click facet - text facet
+\item \textbf{SUCCESS} roof types displayed
+\end{itemize}
+Excluding Entries
+\begin{itemize}
+\item Click include on name in text facet
+\item \textbf{SUCCESS} Roof type with this name is explicitly included 
+\item Click exclude
+\item \textbf{SUCCESS} Entries revert back to original format
+\item Exit text face and filter
+\item \textbf{SUCCESS} Filter removed and column displays all 131 values
+\end{itemize}
+Sort
+\begin{itemize}
+\item Click sort.. in the gps altitude column 
+\item Click numbers
+\item Click smallest first
+\item Click ok
+\item \textbf{SUCCESS} Column is sorted numerically from smallest to largest 
+\item Click sort
+\item Click reverse
+\item \textbf{SUCCESS} Column is reverted
+\item Click sort 
+\itetm Click remove sort
+\item \textbf{SUCCESS} Sorting command is removed and reverted to original
+\end{itemize}
+Sorting by multiple columns
+\begin{itemize}
+\item Click sort on gps longitude as number with largest first
+\item Click ok
+\item Click sort on dps lattitude as number with largest first
+\item Click ok
+\item Click drop down arrow on village
+\item Select edit column then move column to end
+\item \textbf{SUCCESS} Village column has moved to the end
+\item Scroll through village column to find 49
+\item \textbf{ERROR} Cannot find village cell 49
+\item Click drop down arrow on village
+\item Select edit column then move column to beginning
+\item \textbf{SUCCESS} Village column moved to beginning
+\item Scroll towards beginning
+\item \textbf{ERROR} OpenRefine is not scrolling horizontally, appears frozen
+\end{itemize}
 
 \subsection{Key Points}
 Introduction OpenRefine \\
 \includegraphics[width=\textwidth]{Images/OpenRefine_1.png} \\
 Working With OpenRefine \\
 \includegraphics[width=\textwidth]{Images/OpenRefine_2.png}
+Filtering and Sorting with OpenRefine \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_3.png}
 
 \subsection{Final Thoughts}
-\textbf{3:55PM} OpenRefine seems like a very useful tool with an array of feature to assist with large data sets. I enjoyed the exercises, however I found them very repetitive. This would be due to the fact I edited each column separately in the transforming data section - which I realised afterwards that you could repeat the command through the history button. That would have saved a lot of time. Next time I will make sure I read the question and solution properly before progressing with commands. 
-
+\textbf{3:55PM} OpenRefine seems like a very useful tool with an array of feature to assist with large data sets. I enjoyed the exercises, however I found them very repetitive. This would be due to the fact I edited each column separately in the transforming data section - which I realised afterwards that you could repeat the command through the history button. That would have saved a lot of time. Next time I will make sure I read the question and solution properly before progressing with commands. \\
+\textbf{4:27PM} Completed filtering and sorting in OpenRefine with few errors. I think the final errors may have been due to an internet connection - however I thought OpenRefine didn't need wifi? So maybe that isn't the case. I also was not able to find village 49 in the column so I am unsure what happened there. These exercises were predomoinately straight forward and useful in learning how to navigate, sort and utilise OpenRefine. I would like to be able to redo the final exercises with an unfrozen OpenRefine.
 
 
 
