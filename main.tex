@@ -947,7 +947,7 @@ Shell Scripts
 \item Command nano middle.sh
 \item Add comments above script
 \item Select lines from the middle of a file.
-\item # Usage: bash middle.sh filename end(underscore)line num(underscore)lines
+\item Usage: bash middle.sh filename end(underscore)line num(underscore)lines
 \item Save and exit nano
 \item Command nano sorted.sh
 \item Insert command lines from Unix
@@ -1051,5 +1051,174 @@ Second Figure
 
 \subsection{Final Thoughts}
 \textbf{8:05PM} I really enjoy using LaTeX and have found it interesting to play around with. I like that I have been able to add captions to the images, which was bugging me when formatting during Elaboration. Also glad hyperlinks in the table of contents are now added for easier reference.
+
+\section{16/09/2019}
+\subsection{Thoughts/Intentions}
+\textbf{2:17PM}: Beginning open refine data carpentry exercises. \\
+
+
+
+\subsection{Action}
+Working with OpenRefine
+\begin{itemize}
+\item Click create project
+\item Select get data from this computer
+\item Click choose files
+\item select SAFI OpenRefine 
+\item Click open
+\item Click Next 
+\item Click update preview
+\item Click create project
+\item \textbf{SUCCESS} SAFI OpenRefine is uploaded \\
+\end{itemize}
+Using Facets
+\begin{itemize}
+\item Scroll to village column
+\item Click down arrow and choose Facet then Text Facet
+\item Click sort by name/count to view different presentations of data
+\item Click interview date column
+\item Click down arrow and choose Facet>text facet
+\item \textbf{SUCCESS} There are 19 choice for interview dates
+\item Click edit next to interview date
+\item \textbf{SUCCESS} Column is formatted in text
+\item Click down arror and choose Edit cells>common transforms then to date
+\item \textbf{SUCCESS} Column has been converted to dates
+\item Scroll through dates in column
+\item Data was mainly collected in Nov 2016
+\end{itemize}
+Clustering
+\begin{itemize}
+\item Click cluster button in village text facet
+\item Click through method and keying functions for alternate displays
+\item Select key collision methods and metaphone3 key function
+\item \textbf{SUCCESS or ERROR} 6 Clusters were identified, not 2
+\item Click merge for first cluster Ruaca and Ruca
+\item Click merge selected and recluster
+\item Click merge for second cluster Ruaca-Nhameuenda to Ruaca - Nhamuenda
+\item Click merge selected and recluster
+\item \textbf{SUCCESS} There are now no clusters
+\item Exit Cluster pop up
+\item Click edit Chirdozo then change name to Chirodzo
+\item \textbf{SUCCESS} Data has merged
+\item Repeat with Ruaca-Nhamenda
+\item \textbf{SUCCESS} Data has merged and only 4 clusters remain
+\end{itemize}
+Transforming Data
+\begin{itemize}
+\item Click down arrow in items owned column
+\item Choose edit cells then transform...
+\item \textbf{SUCCESS} GREL expression popup opened
+\item Removing left square brackets typing value.replace("[", "") in box
+\item Click OK
+\item \textbf{SUCCESS} All left square brackets gone
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace("'", "") to remove single quote mark
+\item \textbf{SUCCESS} single quote mark removed from column
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace("]", "") to remove right square bracket
+\item \textbf{SUCCESS} right square bracket removed from column
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace(" ", "") to remove spaces from column
+\item \textbf{SUCCESS} spaces removed from column and items separated by semicolons
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New text facet box 
+\item Click count to see common items
+\item Click down arrow on months lack food
+\item Choose edit cells then transform
+\item Type value.replace("]", "") to remove right square bracket
+\item click ok
+\item \textbf{SUCCESS} right square bracket removed from column
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace("'", "") to remove single quote mark
+\item \textbf{SUCCESS} single quote mark removed from column
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace("]", "") to remove right square bracket
+\item \textbf{SUCCESS} right square bracket removed from column
+\item Click down arrow 
+\item Choose edit cells then transform
+\item Type value.replace(" ", "") to remove spaces from column
+\item \textbf{SUCCESS} spaces removed from column and items separated by semicolons
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New clean text facet box
+\item Click down arrow on months no water column
+\item Choose edit cells then transform
+\item Type value.replace("[", "").replace("]", "").replace(" ", "").replace("'", "")
+\item Click ok
+\item \textbf{SUCCESS} Data cleaned in one command
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New clean text facet box
+\item Click down arrow on liv owned column
+\item Choose edit cells then transform
+\item Type value.replace("[", "").replace("]", "").replace(" ", "").replace("'", "")
+\item Click ok
+\item \textbf{SUCCESS} Data cleaned in one command
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New clean text facet box
+\item Click down arrow on res change column
+\item Choose edit cells then transform
+\item Type value.replace("[", "").replace("]", "").replace(" ", "").replace("'", "")
+\item Click ok
+\item \textbf{SUCCESS} Data cleaned in one command
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New clean text facet box
+\item Click down arrow on no food mitigation column
+\item Choose edit cells then transform
+\item Type value.replace("[", "").replace("]", "").replace(" ", "").replace("'", "")
+\item Click ok
+\item \textbf{SUCCESS} Data cleaned in one command
+\item Click down arrow
+\item Choose facet then custom text facet..
+\item Type value.split(";") in expression box
+\item click ok
+\item \textbf{SUCCESS} New clean text facet box
+\end{itemize}
+Using Undo and Redo
+\begin{itemize}
+\item Click undo/redo on left side of screen
+\item Viewing versions of document
+\end{itemize}
+Trim Leading and Trailing Whitespace
+\begin{itemize}
+\item Click down arrow on respondent wall type
+\item Click facet then text facet
+\item Click down arrow
+\item Click edit cells
+\item Click common transforms
+\item Click Trim leading and trailing whitespace
+\item \textbf{SUCCESS} Four choices appear in text facet
+\end{itemize}
+
+\subsection{Key Points}
+Introduction OpenRefine \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_1.png} \\
+Working With OpenRefine \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_2.png}
+
+\subsection{Final Thoughts}
+\textbf{3:55PM} OpenRefine seems like a very useful tool with an array of feature to assist with large data sets. I enjoyed the exercises, however I found them very repetitive. This would be due to the fact I edited each column separately in the transforming data section - which I realised afterwards that you could repeat the command through the history button. That would have saved a lot of time. Next time I will make sure I read the question and solution properly before progressing with commands. 
+
+
+
+
 
 \end{document}
