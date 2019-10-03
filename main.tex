@@ -1304,7 +1304,7 @@ Examining Numbers in OpenRefine
 \item Click edit cells 
 \item Click Common transforms
 \item Click to number
-\item \textbf{SUCCESS} & \textbf{ERROR} Column did not change to numbers however in Undo/redo tab the action displayed "text transform on 1 cell in column village: value.toNumber". Should be 0 as no data was transformed. 
+\item \textbf{SUCCESS} and \textbf{ERROR} Column did not change to numbers however in Undo/redo tab the action displayed "text transform on 1 cell in column village: value.toNumber". Should be 0 as no data was transformed. 
 \item Editing cell in years farm column to replace 11 with text "TEST"
 \item Click pull down menu and click numeric facet
 \item \textbf{SUCCESS} Numeric facet appears in left panel
@@ -1361,8 +1361,10 @@ Exporting and Saving Data From OpenRefine \\
 \clearpage 
 
 \section{03/10/2019}
+\subsection{POC Tests: Upload Workflow}
+I've redesigned and broken down some of the user stories in my project management system to cater for smaller and more manageable tests. I've also realised that DEVONthink 3 is a closed source and i have limited time to work with it + prompts for payment, therefore I am putting that in my backlog and working with Tropy. See figure 3 below.
 \subsection{Thoughts/Intentions}
-\textbf{11AM:} I've redesigned and broken down some of the user stories in my project management system to cater for smaller and more manageable tests. See figure 3 below. I'm going to upload photos from my iPhone onto my laptop using an iPhone USB cable and document the process.
+\textbf{11AM:}  Uploading photos from my iPhone onto my laptop using an iPhone USB cable and document the process.
 \\
 \textbf{11:30AM} After attempting and reading that photos can not be uploaded directly to Tropy, I will upload photos onto Mac photo application and move photos into Tropy
 \\
@@ -1412,7 +1414,55 @@ Process from Mac Photos App to Tropy
 \end{itemize}
 
 \subsection{Final Thoughts}
-\textbf{11:54AM} The process of uploading photos from iPhone to Mac and then into Tropy took a lot more steps that I thought it would. I now have to wrap my head around how I can make this an easier process. I think I will try using MacAutomator next to get this process moving quickly - however I have never used it before so I am unsure what the outcome will be or if I am jumping ahead. However I think I have achieved some of my acceptance criteria because using the USB cord allows a lot of data to be moved at once and works offline so that is good. 
+\textbf{11:54AM} The process of uploading photos from iPhone to Mac and then into Tropy took a lot more steps that I thought it would. I now have to wrap my head around how I can make this an easier process. I think I will try using Mac Automator next to get this process moving quickly - however I have never used it before so I am unsure what the outcome will be or if I am jumping ahead. However I think I have achieved some of my acceptance criteria because using the USB cord allows a lot of data to be moved at once and works offline so that is good. 
+
+\section{03/10/19}
+\subsection{POC Tests: Upload Workflow}
+I want to attempt using Mac Automator after hearing about its ability to streamline repetitive tasks and create workflows. This program could be really useful as it is free, works offline and is already available on my laptop.
+\subsection{Thoughts/Intentions}
+\textbf{5:13PM} Exploring Mac Automator. Not expecting I will be able to configure anything but would like to get familiar with the program. \\
+\textbf{5:36PM} Found record workflow option, so I'm going to upload photos, drag them into a desktop folder named "sort photos", and then drag them into Tropy. I won't be able to type each step so Will record outcome. \\
+\textbf{5:59PM} Recording workflow. This time I will replicate the test run from beginning with plugging in phone, having new photos to import, and making sure everything is closed so the test can restart. See Figure 5: Attempt 2: Displays Error pop up.
+
+\subsection{Actions}
+\begin{itemize}
+\item Double click Automator
+\item Pop up appears "Choose a type for your document - workflow, application, quick action, print plugin, folder action, calendar alarm, image capture plugin or dictation command"
+\item Figure I should google how to use Mac Automator before selecting
+\item Going to select workflow to begin
+\item Selecting record workflow 
+\item After recording workflow select Run
+\item \textbf{ERROR} "Watch Me Do Failed - 1 error The action "Watch Me Do" encountered an error: The operation couldn't be completed. See figure 4: Attempt 1. 
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Automator_1.png}
+    \caption{Attempt 1}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Automator_2.png}
+    \caption{Attempt 2 Displays Error Pop-up}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Final Thoughts}
+\textbf{5:49PM} I think I know why this error occurred. I clicked import All New Photos button during my recording, then when I went to run the test there were no photos available to import. Will try test again with photos available. \\
+\textbf{6:30PM} I still had trouble trying to use the Automator despite having photos available for importing. I think it could be my dragging motion that selects images is unclear, however I am unsure. I will need to look further into using Automator before I run another test. An external error that was frustrating is my mac Photos application kept freezing and I had to force quit the application, so that could have contributed to the Automator not working. I definitely think this program will be efficient once I work out how to use it properly, I will just need to run more tests after doing some research.
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}
