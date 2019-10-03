@@ -1270,11 +1270,100 @@ Filtering and Sorting with OpenRefine \\
 \subsection{Final Thoughts}
 \textbf{3:55PM} OpenRefine seems like a very useful tool with an array of feature to assist with large data sets. I enjoyed the exercises, however I found them very repetitive. This would be due to the fact I edited each column separately in the transforming data section - which I realised afterwards that you could repeat the command through the history button. That would have saved a lot of time. Next time I will make sure I read the question and solution properly before progressing with commands. \\
 \textbf{4:27PM} Completed filtering and sorting in OpenRefine with few errors. I think the final errors may have been due to an internet connection - however I thought OpenRefine didn't need wifi? So maybe that isn't the case. I also was not able to find village 49 in the column so I am unsure what happened there. These exercises were predomoinately straight forward and useful in learning how to navigate, sort and utilise OpenRefine. I would like to be able to redo the final exercises with an unfrozen OpenRefine.
-\clearpage
+
+\section{22/09/2019}
+\subsection{Thoughts/Intentions}
+\textbf{12:24PM} Continue with Data Carpentry OpenRefine: Examining Numbers in OpenRefine \\
+\textbf{12:53PM} Complete Using Scripts \\
+\textbf{1:19PM} Complete Exporting and Saving Data from OpenRefine \\
+
+\subsection{Actions}
+Examining Numbers in OpenRefine
+\begin{itemize}
+\item Click years farm column 
+\item Click edit cells 
+\item Click Common transforms
+\item Click to number
+\item \textbf{SUCCESS} years farm value change from left-justified to right-justified and black to green colour
+\item Click no members column 
+\item Click edit cells 
+\item Click Common transforms
+\item Click to number
+\item \textbf{SUCCESS} no members value change from left-justified to right-justified and black to green colour
+\item Click years lived column 
+\item Click edit cells 
+\item Click Common transforms
+\item Click to number
+\item \textbf{SUCCESS} years lived value change from left-justified to right-justified and black to green colour
+\item Click buildings in compound column 
+\item Click edit cells 
+\item Click Common transforms
+\item Click to number
+\item \textbf{SUCCESS} buildings in compound value change from left-justified to right-justified and black to green colour
+\item Click village column 
+\item Click edit cells 
+\item Click Common transforms
+\item Click to number
+\item \textbf{SUCCESS} & \textbf{ERROR} Column did not change to numbers however in Undo/redo tab the action displayed "text transform on 1 cell in column village: value.toNumber". Should be 0 as no data was transformed. 
+\item Editing cell in years farm column to replace 11 with text "TEST"
+\item Click pull down menu and click numeric facet
+\item \textbf{SUCCESS} Numeric facet appears in left panel
+\item Click x in upper left corner
+\item Click on steps to undo in undo/redo column
+\item \textbf{SUCCESS} Steps are undone
+\end{itemize}
+Using Scripts
+\begin{itemize}
+\item Click Extract 
+\item Select ALL
+\item Open TextEdit
+\item Copy code from operation history
+\item Paste into TextEdit
+\item Select format in TextEdit
+\item Select Make plain text
+\item Select save the file as .txt file
+\item \textbf{SUCCESS} File saved as plain text file with code 
+\item Create new project with messy data set
+\item Named "Script Test"
+\item Click undo/redo tab 
+\item Click Apply
+\item Paste contents of txt file 
+\item Click perform operations
+\item \textbf{SUCCESS} Messy data set is now the same as clean data set
+\end{itemize}
+Exporting and Saving Data from OpenRefine
+\begin{itemize}
+\item Click export button in top right
+\item Select export project
+\item Select download 'local'
+\item \textbf{SUCCESS} local tar.gz file downloaded
+\item Double clip tar zip and open
+\item \textbf{SUCCESS} All components of file included i.e. history, change, data text
+\item Import project in home screen
+\item \textbf{SUCCESS} Imported downloaded tar zip
+\item Click export
+\item Click tab-separated values
+\item \textbf{SUCCESS} File exported to default download directory 
+\end{itemize}
+
+
+\subsection{Key Points}
+Examining Numbers in OpenRefine \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_4.png} \\
+Using Scripts \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_5.png} \\
+Exporting and Saving Data From OpenRefine \\
+\includegraphics[width=\textwidth]{Images/OpenRefine_6.png}
+
+\subsection{Final Thoughts}
+\textbf{1:30PM} These lessons were enjoyable and straight forward. I found the using script activity extremely useful. This effectively demonstrated what we have been learning and how computational thinking can exceedingly improve time-management. 
+
+\clearpage 
 
 \section{03/10/2019}
 \subsection{Thoughts/Intentions}
 \textbf{11AM:} I've redesigned and broken down some of the user stories in my project management system to cater for smaller and more manageable tests. See figure 3 below. I'm going to upload photos from my iPhone onto my laptop using an iPhone USB cable and document the process.
+\\
 \textbf{11:30AM} After attempting and reading that photos can not be uploaded directly to Tropy, I will upload photos onto Mac photo application and move photos into Tropy
 \\
 \begin{figure}[H]
