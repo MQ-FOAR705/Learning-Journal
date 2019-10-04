@@ -978,7 +978,8 @@ Finding Things
 \item \textbf{SUCCESS} Search is now inverted
 \item Command grep --help
 \item \textbf{SUCCESS} and \textbf{ERROR} Options appear but they are not presented as Unix Shell, more haphazard and hard to read. \\
-\includegraphics[width=\textwidth]{Images/grep --help.png} \\
+
+\includegraphics[width=\textwidth]{Images/grep--help.png} \\
 \item Command find . -type d
 \item \textbf{SUCCESS} Name of 5 directories appear
 \item Command find . -type f
@@ -1238,7 +1239,7 @@ Sort
 \item Click reverse
 \item \textbf{SUCCESS} Column is reverted
 \item Click sort 
-\itetm Click remove sort
+\item Click remove sort
 \item \textbf{SUCCESS} Sorting command is removed and reverted to original
 \end{itemize}
 Sorting by multiple columns
@@ -1421,7 +1422,7 @@ Process from Mac Photos App to Tropy
 I want to attempt using Mac Automator after hearing about its ability to streamline repetitive tasks and create workflows. This program could be really useful as it is free, works offline and is already available on my laptop.
 \subsection{Thoughts/Intentions}
 \textbf{5:13PM} Exploring Mac Automator. Not expecting I will be able to configure anything but would like to get familiar with the program. \\
-\textbf{5:36PM} Found record workflow option, so I'm going to upload photos, drag them into a desktop folder named "sort photos", and then drag them into Tropy. I won't be able to type each step so Will record outcome. \\
+\textbf{5:36PM} Found record workflow option, so I'm going to upload photos, drag them into a desktop folder named "sort photos", and then drag them into Tropy. I won't be able to type each step so will record outcome. \\
 \textbf{5:59PM} Recording workflow. This time I will replicate the test run from beginning with plugging in phone, having new photos to import, and making sure everything is closed so the test can restart. See Figure 5: Attempt 2: Displays Error pop up.
 
 \subsection{Actions}
@@ -1432,7 +1433,7 @@ I want to attempt using Mac Automator after hearing about its ability to streaml
 \item Going to select workflow to begin
 \item Selecting record workflow 
 \item After recording workflow select Run
-\item \textbf{ERROR} "Watch Me Do Failed - 1 error The action "Watch Me Do" encountered an error: The operation couldn't be completed. See figure 4: Attempt 1. 
+\item \textbf{ERROR} "Watch Me Do Failed - 1 error The action "Watch Me Do" encountered an error: The operation couldn't be completed. See Figure 4: Attempt 1. 
 \end{itemize}
 
 \begin{figure}[H]
@@ -1453,9 +1454,46 @@ I want to attempt using Mac Automator after hearing about its ability to streaml
 \textbf{5:49PM} I think I know why this error occurred. I clicked import All New Photos button during my recording, then when I went to run the test there were no photos available to import. Will try test again with photos available. \\
 \textbf{6:30PM} I still had trouble trying to use the Automator despite having photos available for importing. I think it could be my dragging motion that selects images is unclear, however I am unsure. I will need to look further into using Automator before I run another test. An external error that was frustrating is my mac Photos application kept freezing and I had to force quit the application, so that could have contributed to the Automator not working. I definitely think this program will be efficient once I work out how to use it properly, I will just need to run more tests after doing some research.
 
+\section{04/10/19}
+\subsection{POC Tests: Upload Workflow}
+After briefly looking at some Automator tutorials I want to try create a basic Automator service to move files. In the tutorial this was called "services" however in my mac Automator it is called a "quick action". 
+\subsection{Thoughts/Intentions}
+\textbf{12:07PM} Create basic Automator quick action.
+\textbf{12:15PM} Attempt to move photos from inside mac Photo application using quick action.
 
+\subsection{Actions}
+Basic Move File
+\begin{itemize}
+\item Open Automator
+\item Click create new document
+\item Select Quick Action
+\item Select files and folders in left panel
+\item Select Move Finder items
+\item Select destination to folder Sort photos
+\item Save quick action under title "Move to sort photos"
+\item Left click on desktop image
+\item \textbf{SUCCESS} Move to sort photos quick action is available and does required action. See Figure 6 below.
+\end{itemize}
+Move file directly from inside Photo App
+\begin{itemize}
+\item Open Photos
+\item Left click on photo
+\item \textbf{ERROR} No quick action available
+\end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Automator_3.png}
+    \caption{Successful Quick Action}
+    \label{fig:my_label}
+\end{figure}
 
+\subsection{Final Thoughts}
+\textbf{12:23PM} I still feel out of my depth and need to read more about mac automator. I can create a very simple quick action that moves photos outisde of an application. A lot of the actions look like they would be helpful, I just have to play around a lot more - it is hard to play around freely and document at the same time because I feel like I double think each step due to having to write it down. I think if I could just mess  around with  documentation this process may be a lot quicker. Actions I want to explore are:
+\begin{itemize}
+\item Running Automator in application
+\item Running action "Get selected photo items"
+\end{itemize}
 
 
 
