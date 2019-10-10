@@ -196,7 +196,7 @@ Dates as Data
 \item Filling it all out with the automated system, I see that the excels date systems (1990) is meant to be relevant, I'm confused to how it applies but will ask.
 \item Just noticed the solution tab on Data Carpentry and going to enter dates manually without an automated function and ask question in class.
 \item Added formula to each column underneath i.e. day column has =day(b1:b15)
-\item \#VALUE! appears in the formula cell. 
+\item VALUE! appears in the formula cell. 
 \item Leaving for now.
 \end{itemize}
 
@@ -1495,10 +1495,44 @@ Move file directly from inside Photo App
 \item Running action "Get selected photo items"
 \end{itemize}
 
+\section{08/10/201}
+\subsection{POC Tests: Upload Workflow}
+The last session was a struggle so i've looked up some more youtube tutorials for mac automator and found some more guidance. 
+\subsection{Thoughts/Intentions}
+\textbf{12:12pm} Attempt to create basic automator workflow to export uploaded photos into external album
 
+\subsection{Actions}
+\begin{itemize}
+\item Open Photos
+\item Create album in photos as "Export"
+\item Open automator
+\item Select workflow option
+\item Add "Get Album by Name" action
+\item Add "Export" into album select
+\item Add action "Export Media Items"
+\item Change Naming method: name in numeric sequence"
+\item Write Base name as: fieldwork
+\item Plug in iphone
+\item Select upload new photos into Export album
+\item Run workflow 
+\item \textbf{SUCCESS} Export album was moved into pictures folder under the name "Photos Export 2019-10-10 12.15.46 pm"
+\end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Workflow_Success1.png}
+    \caption{Successful Workflow}
+    \label{fig:my_label}
+\end{figure}
 
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/PhotoExport_1.png}
+    \caption{Result from Workflow}
+    \label{fig:my_label}
+\end{figure}
+\subsection{Final Thoughts}
+\textbf{12:18PM} Now that there is an exported folder in my pictures album, I have to figure out how I can move that album into Tropy and prompt with metadata, which will take more research and trial and error.
 
 
 
