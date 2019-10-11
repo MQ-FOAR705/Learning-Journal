@@ -1534,7 +1534,30 @@ The last session was a struggle so i've looked up some more youtube tutorials fo
 \subsection{Final Thoughts}
 \textbf{12:18PM} Now that there is an exported folder in my pictures album, I have to figure out how I can move that album into Tropy and prompt with metadata, which will take more research and trial and error.
 
+\section{11/10/2019}
+\subsection{POC Tests: Upload Workflow }
+I've found another action in mac automator called Download pictures. This may present a more streamlined approach to uploading photos from my iPhone directly to a folder in my desktop and by-passing the mac Photos application.
+
+\subsection{Thoughts/Intentions}
+\textbf{10:30AM} Attempt to run download pictures action in automator
+\textbf{10:50AM} Now that I at least know there is a way to automate photos from my iPhone to a desktop folder (using either the previous test or attempting this one again) I really want to know how I can move photos from inside the folder into Tropy. I feel like it will be more straight forward to write a script than use automator for this however I'm overwhelmed by the commands and process.
+
+\subsection{Action}
+\begin{itemize}
+\item Start new workflow document in automator
+\item Select photos section in library
+\item Drag "download pictures action into workflow panel
+\item Plug iphone in 
+\item \textbf{SUCCESS} Iphone appears in Camera Name and displays how many items are to be downloaded
+\item Select download location to sort-photos folder on desktop
+\item Run test
+\item \textbf{ERROR} Test runs for 4 minutes and nothing happens
+\end{itemize}
 
 
+
+\subsection{Final Thoughts}
+\textbf{10:46AM} I've replicated this test twice and waited for a response and it doesnt appear to do anything. The test says it is running, however the download time is taking a while with no indication that it is working. I will have to run again when I have more time to wait it out.
+\textbf{11:50AM} After a lot of googling and trial and error in the terminal, I am nowhere close to figuring this out. Really do not know where to go from here. Doing this manually by just uploading photos and then dragging them into Tropy and then labelling them seems like a much more straight forward process at the moment. I feel like im only minimizing a few clicks despite the hours of work trying to figure it out.
 
 \end{document}
