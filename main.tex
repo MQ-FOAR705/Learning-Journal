@@ -1557,7 +1557,100 @@ I've found another action in mac automator called Download pictures. This may pr
 
 
 \subsection{Final Thoughts}
-\textbf{10:46AM} I've replicated this test twice and waited for a response and it doesnt appear to do anything. The test says it is running, however the download time is taking a while with no indication that it is working. I will have to run again when I have more time to wait it out.
+\textbf{10:46AM} I've replicated this test twice and waited for a response and it doesnt appear to do anything. The test says it is running, however the download time is taking a while with no indication that it is working. I will have to run again when I have more time to wait it out. \\
+
 \textbf{11:50AM} After a lot of googling and trial and error in the terminal, I am nowhere close to figuring this out. Really do not know where to go from here. Doing this manually by just uploading photos and then dragging them into Tropy and then labelling them seems like a much more straight forward process at the moment. I feel like im only minimizing a few clicks despite the hours of work trying to figure it out.
+
+\section{17/10/2019}
+\subsection{Downloading Tools for POC}
+After speaking with Brian I need to now download a few tools to assist with this POC. 
+\subsection{Thoughts/Intentions}
+\textbf{11:51AM} Going to download Exif for metadata management \\
+\textbf{12:04PM} Testing exiftool to see if installed correctly \\
+\textbf{12:09PM} Now that exiftool is downloaded I want to download Duplicati . \\ 
+\textbf{12:21PM} Leaving Duplicati download for now and moving onto reading about Tropy templates. \\
+\textbf{1:26PM} I've read about the Tropy templates now attempting to create a test template.
+
+\subsection{Actions}
+ExifTool Download
+\begin{itemize}
+\item Entering ExifTool by Phil Harvey website
+\item Click download MacOS Package: ExifTool-11.71.dmg (2.8 MB)
+\item \textbf{SUCCESS} package installer now opened on desktop
+\item Double click installer
+\item Prompt "“ExifTool-11.71.pkg” cannot be opened because it is from an unidentified developer."
+\item Click OK
+\item Installer opens - click continue through prompts
+\item \textbf{SUCCESS} Installation was successful
+\end{itemize}
+ExifTool test
+\begin{itemize}
+\item Open terminal
+\item Type exiftool
+\item \textbf{SUCCESS} Tool name, synoposis, description, options and option details appear. 
+\item See Figure 9: ExifTool in Terminal below.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/ExifTool_1.png}
+    \caption{ExifTool in Terminal}
+    \label{fig:my_label}
+\end{figure}
+
+Duplicati Download
+\begin{itemize}
+\item Enter Duplicati website
+\item Click download Duplicati 2.0 (beta) option
+\item Click macOS / OSX 2.0.4.23 option
+\item \textbf{SUCCESS} Downloaded onto desktop
+\item Double click on installer
+\item \textbf{ERROR} "The following disk images couldn't be opened: Image Duplicati-2.0.4.23 beta / Reason: Image not recognised.
+\item Click ok
+\item Right click on installer
+\item Click "Open with - Disk Image Mounter (Default"
+\item \textbf{ERROR} Same error message as above.
+\item Open System Preferences
+\item Click Security and Privacy
+\item Click the lock to make changes
+\item Double click Duplicati
+\item \textbf{ERROR} Same error message as above.
+\end{itemize}
+
+Tropy Template
+\begin{itemize}
+\item Open Tropy
+\item Select preferences
+\item Select Template
+\item Select 'locked' template with desired categories
+\item Click the double page icon next to template name
+\item \textbf{SUCCESS} Locked template has been duplicated and URI is different
+\item Fill in Name, type, creator description.
+\item Click Create
+\item Option for selecting properties appears
+\item Click Date
+\item Label as Date
+\item Default "datatype" is under name "String xsd:string" (unsure what this means)
+\item See Figure 10. below for reference of filled categories and test template.
+\item Click upload icon next to template
+\item Save As: Tropy Template Test
+\item \textbf{SUCCESS} Tropy Template test is saved on desktop
+\end{itemize}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/TemplateTest_1.png}
+    \caption{Tropy Template Test}
+    \label{fig:my_label}
+\end{figure}
+
+
+\subsection{Final Thoughts}
+\textbf{1:36PM} I'm glad that I have been able to download ExifTool and begin playing around with Tropy Templates, however I'm not sure what happened with Duplicati or what the next step is with the tropy template - or how that will work. I will continue on this later after returning to some major essays that are due soon.
+
+
+
+
+
 
 \end{document}
