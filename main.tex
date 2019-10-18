@@ -1648,8 +1648,39 @@ Tropy Template
 \subsection{Final Thoughts}
 \textbf{1:36PM} I'm glad that I have been able to download ExifTool and begin playing around with Tropy Templates, however I'm not sure what happened with Duplicati or what the next step is with the tropy template - or how that will work. I will continue on this later after returning to some major essays that are due soon.
 
+\section{18/10/2019}
+\subsection{POC test: Upload Workflow}
+After messing around with Automator I have found how to export from photos into a desktop folder and have them renamed with the base name ChanguField (Changu being the name of the place and Field referring to fieldwork). They are ordered sequentially and also have the date added. They currently export to a folder on my desktop named Organise. 
 
+\subsection{Thoughts/Intentions}
+\textbf{7:46PM} Document automation process. See Figure 11 for brief automation.
 
+\subsection{Actions}
+\begin{itemize}
+\item Enter Automator
+\item Select workflow
+\item Add action "get album by name" and write desired album in photos (in this case Export)
+\item Add action Export Media Items
+\item Choose file name (faulty for me, I rename later)
+\item Choose action result: Resturn: Reference to export folder
+\item Add action Move Finder Items to desired album (i.e. Organise)
+\item Add action Get Folder Contents
+\item Add action Rename Finder Items: Make sequential
+\item Select option new name and write desired name (i.e. ChanguField)
+\item Select separated by underscore
+\item Add action Rename Finder Items: Add Date or Time
+\item Select separated by underscore
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Automator_4.png}
+    \caption{Successful Workflow}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Final Thoughts}
+\textbf{8:02PM} At least one of my functions are complete, however I still have a long way to go with exif, tropy template and shell script. As you can see above in figure 11, automator uses shell script so I might have to run some shell script in there to get the photos into Tropy. I am most nervous about the shell script as that seems like the most difficult section that I am the most incapable of. Same with exif, however we shall see.
 
 
 
