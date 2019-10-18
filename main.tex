@@ -1682,6 +1682,68 @@ After messing around with Automator I have found how to export from photos into 
 \subsection{Final Thoughts}
 \textbf{8:02PM} At least one of my functions are complete, however I still have a long way to go with exif, tropy template and shell script. As you can see above in figure 11, automator uses shell script so I might have to run some shell script in there to get the photos into Tropy. I am most nervous about the shell script as that seems like the most difficult section that I am the most incapable of. Same with exif, however we shall see.
 
+\section{18/10/2019}
+\subsection{POC test: Working With ExifTool}
+I have this tool for metadata that I need to learn how to use. I'm currently attempting to work with exiftool in shell to extract metadata from the images I will use for this POC.
 
+\subsection{Thoughts/Intentions}
+\textbf{8:48PM} Document actions in ExifTool \\
+\textbf{9:03PM} After many errors I found the solution, documenting action. \\
+\textbf{9:33PM} Testing different commands found online for ExifTool
+
+\subsection{Action}
+\begin{itemize}
+\item Enter shell terminal
+\item type exiftool
+\item \textbf{SUCCESS} exiftool program is displayed in shell
+\item drag photo into exiftool
+\item \textbf{ERROR} Pattern not found (press return)
+\item Type E for examine
+\item Drag photo in
+\item \textbf{SUCCESS} or \textbf{ERROR}? Unsure, copious amounts of blacked out code
+\item Press esc, command l and other commands to exit 
+\item \textbf{ERROR} The default error noise is made, unsure how to continute
+\item Click exit in top left corner
+\item Prompt do you want to terminate this session? Select yes
+\item \textbf{SUCCESS} and \textbf{ERROR}, exited session however not accurately.
+\end{itemize}
+Successful Attempt
+\begin{itemize}
+\item Open shell terminal
+\item type exiftool
+\item add space next to exiftool
+\item drag photo into shell
+\item press enter
+\item \textbf{SUCCESS} Photo metadata is displayed in shell
+\item command K to refresh terminal
+\item type exiftool
+\item add space
+\item drag six images in at once
+\item \textbf{SUCCESS} Metadata for all six images are displayed
+\end{itemize}
+ExifTool Commands
+\begin{verbatim}
+   type exiftool -d "%r %a, %B %e, %Y" -DateTimeOriginal -S -s *.jpg 
+\end{verbatim}
+\begin{itemize}
+\item drag image next to code
+\item press enter
+\item \textbf{ERROR} no matches found: *.jpg
+\item type "" without .jpg  
+\item drag image next to code
+\item press enter
+\item \textbf{SUCCESS} original date and time displayed
+\end{itemize}
+
+\subsection{Final Thoughts}
+\textbf{9:24PM} I'm really happy I figured out how to see metadata of photos in exiftool relatively quickly. I was worried it would take a lot of time like everything else, so very relieved. I like that it has the original time and date in the photo, however I am unable to see location so I'm unsure what to do there. \\
+\textbf{9:52PM} This command draws out original date and time, which I feel could be very useful down the track. If I had the location I would be satisfied. See Figure 11 below for neat display in shell with commands. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/ExifTool_Command.png}
+    \caption{Successful Shell Commands}
+    \label{fig:my_label}
+\end{figure}
 
 \end{document}
