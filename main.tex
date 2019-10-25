@@ -1930,6 +1930,70 @@ Download Duplicati
 \textbf{10:05AM} I've messaged Brian because I don't know how to get passed this. I also feel like I've hit a wall with the POC and really unsure how I'm meant to tie everything together. No idea where to start with a script. Going to try learn more about scripts and see if I can tie in or move any files into Tropy. \\
 \textbf{10:09AM} Realised hes offline till Friday. Will try re-learning using shell script again whilst I wait for a response. MINDDDD IS IMPLODING BLAAHHHHHHH
 
+\section{25/10/2019}
+\subsection{POC TESTS: Export Photos and Shell}
+Since I'm stuck on everything but automator I'm going to streamline the process to make it easier for when I'm able to write the shell script.
+\subsection{Thoughts/Intention}
+\textbf{10:30AM} Go through the automator process to simplify names in exported folder and photos \\
+\textbf{10:35AM} Change eventual folder name from photos exports to tropy input \\
+\textbf{11:30AM} Display command in shell that just worked to display folder
 
+\subsection{Actions}
+\begin{itemize}
+\item Run Export Photos shell script
+\item Click results 
+\item Remove add date section in action: "rename finder items: Make sequential
+\item Run shell script
+\item \textbf{SUCCESS} Photos are now more basic without dates, written as "ChanguField"
+\end{itemize}
+Rename Folder
+\begin{itemize}
+\item Add action "find finder items" 
+\item Search organise photo
+\item Select "all" of the following are true
+\item Select date last modified
+\item Add action rename finder items
+\item Select replace text
+\item Type in find bar: Photos Export 
+\item Select in basename only and ignore case
+\item Type in replace tropy input (underscore as the space inbetween)
+\item Run shell script
+\item \textbf{ERROR} Name does not change
+\item Add action get selected finder items after "find finder items" action
+\item Run shell script
+\item \textbf{SUCCESS} Folder is renamed as tropy input (see figure below for screenshot of actions)
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Automator_5.png}
+    \caption{New Actions in Automation}
+    \label{fig:my_label}
+\end{figure}
+
+Unix Shell Command to Reach Tropy
+\begin{itemize}
+\item Command pwd 
+\item Command cd desktop
+\item Command cd organise
+
+\begin{verbatim}
+Command ls | grep_tropy input 
+\end{verbatim}  
+\item \textbf{SUCCESS} Tropy input folder is in shell (See figure 15 below)
+\end{itemize}
+
+\clearpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Unix_1.png}
+    \caption{Unix Commands to Reach Tropy Input Folder}
+    \label{fig:my_label}
+\end{figure}
+
+
+\subsection{Final Thoughts}
+\textbf{10:57AM} Progress is very minor, albeit more refined. Would love to be working with shell and/or duplicati and refining my overall POC rather than the only function I have working. \\
+\textbf{11:30AM} At least I'm able to get to the point where I am seeing the folder I need to move into Tropy, I just need to figure out how to combine this code with exiftool, grab the template, put it into Tropy and run Duplicati... 
 
 \end{document}
