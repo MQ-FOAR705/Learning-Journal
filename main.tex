@@ -2000,18 +2000,25 @@ Command ls | grep_tropy input
 \subsection{POC Tests: Duplicati and Unix Shell Command}
 Working with Kathryn I was able to successfully download Duplicati and work with an exiftool command to add metadata to an image.
 \subsection{Thoughts/Intentions}
-\textbf{1:48PM} Documenting exiftool command that adds metadata to image.
+\textbf{1:48PM} Documenting exiftool command that adds metadata into image.
 
 \subsection{Actions}
 Unix Shell Command
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Images/Exiftool_3.png}
-    \caption{ExifTool Command to Add Metadata To Image}
+    \caption{ExifTool Command to Add Metadata Into Image}
     \label{fig:my_label}
 \end{figure}
 
+\textbf{Key Command Once Located in Image Folder}
+\begin{verbatim}
+exiftool -XMP-dc: Creator="Sophie" "ChanguField_1.jpeg"
+\end{verbatim}
 
+\subsection{Final Thoughts}
+\textbf{6:30PM} Had to go to class so wasn't able to complete entry. I'm feeling a lot better talking to Kathryn and seeing the direction I can take. I also was reminded about for loops, which I will need to play around with a lot to get something working with exiftool. Have a lot of stuff to work on now so hopefully I can get somewhere.  \\
+\textbf{TIP:} Use tab key in command shell to fill out the additional writing after basename i.e. tropy input "tab"
 
 
 
