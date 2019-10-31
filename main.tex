@@ -2024,7 +2024,7 @@ exiftool -XMP-dc: Creator="Sophie" "ChanguField_1.jpeg"
 \subsection{POC TEST: Bash Script}
 After playing around with bash script I want to be able to write what I have down so there is a clear example of the steps I have so far.
 \subsection{Thoughts/Intention}
-\textbf{7:49PM} Write shell script so far. This is with the folder beginning in home directory
+\textbf{7:49PM} Write shell script so far. This is with the folder beginning in home directory \\
 \textbf{8:32PM} Finding the location in photos is a current issue I'm having. Entered mac default photos app to look at geotag "places" in photo. Photos I am currently using are not located - so trying different photos and uploading into exiftool.
 
 \subsection{Actions}
@@ -2049,5 +2049,34 @@ Photo Location
 
 \subsection{Final Thoughts}
 \textbf{8:36PM} Spent a solid few hours trying to look through for loops and shell scripts, don't feel like I've found a clearer direction. The location in the photo is annoying me because its obviously there for apple programs to see so I'm not sure why exif or Tropy are not picking this up. Will figure out down the track. Good luck to future Sophie. 
+
+\section{31/10/2019}
+\subsection{POC TEST: Bash Script}
+Currently testing out how to use exif tool, how to iterate commands and whether it works in mac automator. I have been working on this for a few hours already, however I wanted to document some of the progress and errors.
+\subsection{Thoughts/Intention}
+\textbf{11:25AM} Write new bash script that works for now. This relies on whether mac automator successfully changes the name of the folder to tropy input. \\
+\textbf{1:14PM} After trying to figure out everythign over the past few hours, I'm going to just copy and paste a screenshot of my current progress and issues. See figure 17 after final thoughts.
+
+\subsection{Actions}
+Updated Bash Script
+\begin{verbatim}
+cd POC_Contents
+cd tropy_input*
+exiftool -Creator="Sophie Wallace" *.jpeg
+\end{verbatim}
+
+\subsection{Final Thoughts}
+\textbf{1:21PM} I've been working on this since 8:30am and still feel that I have so many roadblocks that are preventing me from moving forward. I have been able to apply metadata to multiple images in exiftool so that is one basic function complete that took hours. The current shell script I have is only three lines using exiftool. Once I can copy images into tropy hopefully that will add more - however I do feel like mac automator has done the majority of work. Unsure how  this will impact my mark. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Progress.png}
+    \caption{Current Progress}
+    \label{fig:my_label}
+\end{figure}
+
+
+
 
 \end{document}
