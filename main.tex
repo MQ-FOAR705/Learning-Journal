@@ -2077,11 +2077,11 @@ exiftool -Creator="Sophie Wallace" *.jpeg
 \end{figure}
 
 \section{07/11/12}
-\subsection{POC Tests: Run on different Laptop}
-Using my partners laptop to test if I can follow the instructions in my Github repository ReadMe and successfully download and run everything.
+\subsection{POC Tests: Running on a different system}
+After consultation with Brian, a lot of my issues have been solved on this computer. However, I still need to see if its replicable on another laptop. I'm now on another laptop to test if I can follow the instructions in my Github repository ReadMe and successfully download and run everything.
 \subsection{Thoughts/Intentions}
 \textbf{3:07PM} Go through requirements section in ReadMe \\
-\textbf{3:58PM} Now going to test installation 
+\textbf{3:58PM} Now going to test installation \\
 \textbf{4:07PM} Repository is cloned and images are in a new folder in Mac Photos called Export. Now testing Workflow
 
 \subsection{Actions}
@@ -2144,9 +2144,29 @@ Testing Workflow
 \item \textbf{ERROR} The action "Export Medeia items" could not be loaded because it could not be located "Try reinstalling this action
 \item Reinstall actions
 \item Run Automation test
+\item \textbf{ERROR} Location not detected
 \end{itemize}
 
+\subsection{Final Thoughts}
+\textbf{4:31PM} All downloads worked well, with some tweaking. I might need to just include that in the limitations/predetermined issues. I need to change a lot of the locations in the workflow automation to make it successful on another computer, which I will do now.
 
+\section{07/11/2019}
+\subsection{POC Tests: Progress}
+After fixing some of the ExifTool script with Brian's help I thought I should document the updates and changes in this journal. It is hard to maintain this journal when there are so many elements to record and a lot of progress happening during consultation hours.
+\subsection{Thoughts/Intentions}
+\textbf{6:22PM} Documenting updates and progress that has occurred over the past week in this POC. 
 
+\subsection{Updates}
+\begin{itemize}
+\item \textbf{Tropy does not work with the command line:} this shifted my expectations for the final product. Photos would not be able to be moved into Tropy through a shell script. This was both gratifying and disheartening, because although I knew I had spent a lot of time trying to work with this - I was glad to know that it was not an error of mine that prohibited this from working. However, that meant changing the approach.
+\item \textbf{Tested different tools:} the first approach was to try a different tool over Tropy. This tool was called darktable. After downloading and opening the program, its interface and functions prioritised photo editing over metadata management. Tropy remained the most appropriate program for this eventual POC.
+\item \textbf{Changed approach to Automator:} now that photos cannot be imported to Tropy via script, a more streamlined process in automator was created. This included implementing the action "Watch Me Do" at the end. This allows for the final action of the demonstration to display Tropy and the folder with updated photos next to eachother in a tiled window. This looks effective, however is not replicable on other computers.
+\item \textbf{Updated ExifTool Script:} the exiftool script I created worked fine, however it only added the creator. Working with Brian we were able to add the original date of the photo, rename the image and create a prompt to ask for location. This allows for arbitrary metadata to be added to the image. This is a significant improvement and enables the workflow to rely less on haphazard actions.
+\item \textbf{Added License:} I also added a license in my GitHub repository to professionalise the software package. 
+\item \textbf{GitHub README:} I have started writing the background, outline, requirements, installation, testing workflow, limitations and further information sections in my README for the POC implementation. 
+\end{itemize}
+
+\subsection{Final Thoughts}
+\textbf{6:40PM} I am really happy with how much progress has occurred over this past week. I feel like I have an actual POC to submit on Sunday and it is something I am proud of and feel I will use in the future. There are still some requirements I need to sort out, mainly how to instruct the user to implement Duplicati and creating criteria for Quality Assurance . Other than that I am pretty happy with how it has turned out. Hopefully, this will be enough for a substantial outcome. 
 
 \end{document}
