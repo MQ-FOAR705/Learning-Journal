@@ -2066,7 +2066,7 @@ exiftool -Creator="Sophie Wallace" *.jpeg
 \end{verbatim}
 
 \subsection{Final Thoughts}
-\textbf{1:21PM} I've been working on this since 8:30am and still feel that I have so many roadblocks that are preventing me from moving forward. I have been able to apply metadata to multiple images in exiftool so that is one basic function complete that took hours. The current shell script I have is only three lines using exiftool. Once I can copy images into tropy hopefully that will add more - however I do feel like mac automator has done the majority of work. Unsure how  this will impact my mark. 
+\textbf{1:21PM} I've been working on this since 7:30am and still feel that I have so many roadblocks that are preventing me from moving forward. I have been able to apply metadata to multiple images in exiftool so that is one basic function complete that took hours. The current shell script I have is only three lines using exiftool. Once I can copy images into tropy hopefully that will add more - however I do feel like mac automator has done the majority of work. Unsure how  this will impact my mark. 
 
 
 \begin{figure}[H]
@@ -2075,6 +2075,76 @@ exiftool -Creator="Sophie Wallace" *.jpeg
     \caption{Current Progress}
     \label{fig:my_label}
 \end{figure}
+
+\section{07/11/12}
+\subsection{POC Tests: Run on different Laptop}
+Using my partners laptop to test if I can follow the instructions in my Github repository ReadMe and successfully download and run everything.
+\subsection{Thoughts/Intentions}
+\textbf{3:07PM} Go through requirements section in ReadMe \\
+\textbf{3:58PM} Now going to test installation 
+\textbf{4:07PM} Repository is cloned and images are in a new folder in Mac Photos called Export. Now testing Workflow
+
+\subsection{Actions}
+Tropy
+\begin{itemize}
+\item Click tropy download link
+\item \textbf{SUCCESS} Tropy begins downloading
+\item Click show tropy in finder
+\item Double click Tropy.dmg file
+\item \textbf{SUCCESS} Tropy is downloaded onto system
+\end{itemize}
+
+ExifTool
+\begin{itemize}
+\item Click ExifTool link
+\item \textbf{SUCCESS} ExifTool begins to download
+\item Click on Exiftool download
+\item Double click on exiftool package in prompt
+\item \textbf{ERROR} ExifTool doesn't open due to being from an unidentified server
+\item Right click on exiftool package and open with terminal
+\item Double click on exiftool package
+\item \textbf{SUCCESS} ExifTool installer appears
+\item Go through installation process
+\item \textbf{SUCCESS} Exiftool is now installed
+\end{itemize}
+
+Duplicati
+\begin{itemize}
+\item Click on Duplicati link 
+\item \textbf{SUCCESS} Duplicati downloads
+\item Click on duplicati download
+\item \textbf{ERROR} The following disk image couldn't be opened
+\item Show Duplicati download in finder
+\item right click on Duplicati and click open
+\item \textbf{ERROR} Same message as above
+\item Find Duplicati website
+\item Download directly from websitee
+\item Click open once downloaded
+\item \textbf{SUCCESS} Duplicati downloaded into applications
+\end{itemize}
+
+GitHub Desktop
+\begin{itemize}
+\item Click on GitHub Desktop link
+\item \textbf{SUCCESS} GitHub desktop downloads
+\item Double click on github desktop download
+\item \textbf{SUCCESS} github desktop is downloaded
+\end{itemize}
+
+Cloning repository
+\begin{itemize}
+\item Open POC Contents repository
+\item \textbf{SUCCESS} POC Contents are now in system
+\end{itemize}
+
+Testing Workflow
+\begin{itemize}
+\item Open POC Automator File
+\item \textbf{ERROR} The action "Get Album by Name" could not be loaded because it could not be located
+\item \textbf{ERROR} The action "Export Medeia items" could not be loaded because it could not be located "Try reinstalling this action
+\item Reinstall actions
+\item Run Automation test
+\end{itemize}
 
 
 
