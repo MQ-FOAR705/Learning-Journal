@@ -2169,4 +2169,80 @@ After fixing some of the ExifTool script with Brian's help I thought I should do
 \subsection{Final Thoughts}
 \textbf{6:40PM} I am really happy with how much progress has occurred over this past week. I feel like I have an actual POC to submit on Sunday and it is something I am proud of and feel I will use in the future. There are still some requirements I need to sort out, mainly how to instruct the user to implement Duplicati and creating criteria for Quality Assurance . Other than that I am pretty happy with how it has turned out. Hopefully, this will be enough for a substantial outcome. 
 
+\section{08/11/2019}
+\subsection{Final POC Components}
+I want to include the final POC components that work in a separate system to display how it has evolved over time. 
+\subsection{Thoughts/Intentions}
+\textbf{10:38AM} Show final Automator workflow
+\textbf{11:02AM} Show final ExifTool script
+
+\subsection{Automator Workflow}
+The final workflow automation includes nine actions that work chronologically. \\
+The first four actions automate moving the images from the default Mac Photo application onto Desktop. This is the initial step to prepare them for added metadata and moving into Tropy. These set up actions are in Figure 18 below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Final_Automation1.png}
+    \caption{Export Actions}
+    \label{fig:my_label}
+\end{figure}
+
+The next step is adding metadata. The first two actions find the folder and rename it to tropy input with the asterisks including the current date and time when they were exported. Thereafter, a prompt appears asking for text to embed the image with arbitary metadata. This prompt asks "What is the geo-location of these images?". A shell script then runs a code to embed the image with metadata including the author i.e. Sophie Wallace, renaming the images to Nepal and original creation date and time, and prioritises the date of the image to display the creation date and time when in Tropy. The actions for adding metadata are seen below in Figure 19. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Final_Automation2.png}
+    \caption{Metadata Actions}
+    \label{fig:my_label}
+\end{figure}
+
+Lastly, the automator workflow launches Tropy for the photos to be manually dragged in. Due to the command line not working with Tropy, this was the most appropriate way to input photos. The final outcome of the images in Tropy can be seen in Figure 20 below. The final workflow displaying all the actions can be seen in Figure 21 below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Final_Tropy1.png}
+    \caption{Final Images in Tropy}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/Final_Automation3.png}
+    \caption{Complete Automator Workflow}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{ExifTool Script}
+This script started with only adding author metadata to one image and was external to the Automator workflow. With the help of Brian, we were able to include this script inside the workflow and add more metadata such as location, original date and renaming the images. Renaming images was important due to the unreliable nature of the automator renaming action. Now the script should be consistent. There are two sections of this script. See Figure 22 for the separate script. See Figure 23 for the script inside Automator.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/ExifTool_Final1.png}
+    \caption{Separate ExifTool Script}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/ExifTool_Final2.png}
+    \caption{Automator Shell Script}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{GitHub Repository}
+The GitHub Repository now includes almost all components needed for the POC demonstration. The quality assurance criteria needs to still be added. This will be included tomorrow. See Figure 24 for the almost complete GitHub Repository. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Images/GitHub_Final1.png}
+    \caption{GitHub Repository}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Final Thoughts}
+\textbf{11:28AM} Again, I'm happy with the final product. The fact that all of the automation is inside Automator is great because I thoguht I would need to write another script that would have to be fun separately to automator. This adds to the streamlined process. This demonstration discussed above is a more simplified version of the one I have on my computer however I'm pleased with its applicability. Hopefully it works on the the demonstrators computer! As mentioned above, I still have to work with Duplicati, the PICO Presentation and the Acceptance Criteria. However, as this journal it handed in today by 2PM I wanted to make sure the final product was documented. 
+
+
+
+
 \end{document}
